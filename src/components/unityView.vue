@@ -7,13 +7,13 @@ import { unityStore } from "./store/unityState";
     const unityCanvas = useTemplateRef("unity-canvas");
 
     // UNITY PATH (유니티 빌드파일 위치)
-    const unityPath = "unity/build";
+    const unityPath = "unity/";
 
     // UNITY CONFIG
     const config = {
-        dataUrl: unityPath + ".data.gz",
-        frameworkUrl: unityPath + ".framework.js.gz",
-        codeUrl: unityPath + ".wasm.gz",
+        dataUrl: unityPath + "data.gz",
+        frameworkUrl: unityPath + "framework.js.gz",
+        codeUrl: unityPath + "wasm.gz",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Kkumi-Land_unity",
