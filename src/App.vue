@@ -1,6 +1,7 @@
 <script setup lang="ts">
 	import { RouterView } from 'vue-router';
-	import Header from '@/components/header/Header.vue';
+	import Header from '@/components/Header.vue';
+	import Loading from './components/loading.vue';
 </script>
 
 
@@ -8,12 +9,11 @@
 
 <template>
 	<div id="layout">
-		<Header />
-
-		<div id="page-wrapper">
-			<RouterView />
-		</div>
+        <Header />
+		<RouterView />
 	</div>
+
+	<Loading />
 </template>
 
 
@@ -21,35 +21,26 @@
 
 <style scoped>
 	#layout {
+		position: relative;
 		width: 100%;
 		height: 100%;
 		display: flex;
 		flex-direction: column;
-		
-		
-		& #page-wrapper {
-			position: relative;
-			width: 100%;
-			flex: 1;
-		}
+		overflow-y: auto;
 	}
-
-
 
 	
 	/* SCROLL STYLE */
-	::-webkit-scrollbar {
-		width: 1.2rem;
-		height: 1.2rem;
-		background-color: var(--color-scroll-track);
+	*::-webkit-scrollbar {
+		width: 0.8rem;
+		height: 0.8rem;
+		background-color: var(--color-background);
 	}
-	::-webkit-scrollbar-thumb {
-		border-radius: 9999px;
-		border-left: 0.2rem solid var(--color-scroll-track);
-		border-right: 0.2rem solid var(--color-scroll-track);
+	*::-webkit-scrollbar-thumb {
+		border-radius: 9999rem;
 		background-color: var(--color-scroll);
 	}
-	::-webkit-scrollbar-thumb:hover {
+	*::-webkit-scrollbar-thumb:hover {
 		background-color: var(--color-scroll-hover);
 	}
 </style>
