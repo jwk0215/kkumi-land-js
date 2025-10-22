@@ -1,6 +1,6 @@
 <script setup lang="ts">
     import { onMounted, useTemplateRef } from "vue";
-import { unityStore } from "./store/unityState";
+import { unityStore } from "../store/unityStore";
 
 
     // UNITY CANVAS ELEMENT
@@ -18,10 +18,6 @@ import { unityStore } from "./store/unityState";
         companyName: "DefaultCompany",
         productName: "Kkumi-Land_unity",
         productVersion: "0.1",
-        webglContextAttributes: {
-            alpha: true,
-            premultipliedAlpha: false
-        }
     };
 
 
@@ -58,7 +54,7 @@ import { unityStore } from "./store/unityState";
 
 
     onMounted(() => {
-        loadUnity("/unity/build.loader.js");
+        loadUnity("/unity/loader.js");
     });
 </script>
 
@@ -66,7 +62,7 @@ import { unityStore } from "./store/unityState";
 
 
 <template>
-	<canvas id="unity-canvas" ref="unity-canvas"></canvas>
+	<canvas id="unity-canvas" ref="unity-canvas" width="960" height="600"></canvas>
 </template>
 
 
@@ -77,6 +73,6 @@ import { unityStore } from "./store/unityState";
     #unity-canvas {
         width: 100%;
         height: 100%;
-        background-color: transparent;
+        background: none !important;
     }
 </style>

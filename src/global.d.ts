@@ -9,7 +9,7 @@ declare global {
         unityInstance: any;
 
         // unity load 완료 시 실행될 함수 (unity쪽에서 실행함)
-		onUnityLoaded: () => void;      
+		onUnityLoaded: () => void;
     }
 
 
@@ -28,6 +28,12 @@ declare global {
 			frameworkUrl: string;
 			codeUrl: string;
 		},
-		onProgress?: (progress: number) => void
+		onProgress?: (progress: number) => void,
     ): Promise<UnityInstance>;
+
+
+    interface CategoryDataType {
+        depthList: {[key: string]: string},
+        [key: string]: any
+    }
 }

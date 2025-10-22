@@ -131,6 +131,7 @@
 	font-family: SchoolSafetyRoundedSmile, sans-serif;
 	color: var(--color-text);
 	text-decoration: none;
+	list-style: none;
 }
 
 

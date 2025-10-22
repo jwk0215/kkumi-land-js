@@ -1,6 +1,6 @@
 <script setup lang="ts">
     import { useRoute } from 'vue-router';
-    import { unityStore } from './store/unityState';
+    import { unityStore } from '../store/unityStore';
 
 
     const route = useRoute();
