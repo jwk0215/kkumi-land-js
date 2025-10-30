@@ -1,0 +1,78 @@
+{
+    "build": {
+        "icon": "/images/build-icon.svg",
+        "floor": {
+            "name": "바닥",
+            "list": [
+                {
+                    "src": "/models/build/floor/Floor1m.glb",
+                    "info": "1 x 1 (미터)",
+                    "name": "Floor1m"
+                },
+                {
+                    "src": "/models/build/floor/Floor2m.glb",
+                    "info": "2 x 2 (미터)",
+                    "name": "Floor2m"
+                },
+                {
+                    "src": "/models/build/floor/Floor2x4m.glb",
+                    "info": "2 x 4 (미터)",
+                    "name": "Floor2x4m"
+                },
+                {
+                    "src": "/models/build/floor/Floor3m.glb",
+                    "info": "3 x 3 (미터)",
+                    "name": "Floor3m"
+                },
+                {
+                    "src": "/models/build/floor/Floor4m.glb",
+                    "info": "4 x 4 (미터)",
+                    "name": "Floor4m"
+                }
+            ]
+        },
+        "wall": {
+            "name": "벽",
+            "list": [
+                {
+                    "src": "/models/build/floor/Floor1m.glb",
+                    "info": "1 x 1 (미터)",
+                    "name": "Floor1m"
+                },
+                {
+                    "src": "/models/build/floor/Floor2m.glb",
+                    "info": "2 x 2 (미터)",
+                    "name": "Floor2m"
+                },
+                {
+                    "src": "/models/build/floor/Floor2m.glb",
+                    "info": "2 x 2 (미터)",
+                    "name": "Floor2m"
+                }
+            ]
+        },
+        "door": {
+            "name": "문",
+            "list": [
+                {
+                    "src": "/models/build/floor/Floor1m.glb",
+                    "info": "1 x 1 (미터)",
+                    "name": "Floor1m"
+                },
+                {
+                    "src": "/models/build/floor/Floor2m.glb",
+                    "info": "2 x 2 (미터)",
+                    "name": "Floor2m"
+                }
+            ]
+        }
+    },
+    "living": {
+        "icon": "/images/living-icon.svg"
+
+    },
+    "bathroom": {
+        "icon": "/images/bathroom-icon.svg"
+
+    }
+}

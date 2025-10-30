@@ -1,0 +1,22 @@
+{
+    "green": {
+        "primary": "rgba(0, 189, 126, 1)",
+        "secondary": "rgba(0, 189, 126, 0.3)"
+    },
+    "blue": {
+        "primary": "rgba(0, 110, 255, 1)",
+        "secondary": "rgba(0, 110, 255, 0.3)"
+    },
+    "yellow": {
+        "primary": "rgba(214, 211, 0, 1)",
+        "secondary": "rgba(214, 211, 0, 0.3)"
+    },
+    "scarlet": {
+        "primary": "rgba(255, 0, 98, 1)",
+        "secondary": "rgba(255, 0, 98, 0.3)"
+    },
+    "orange": {
+        "primary": "rgba(255, 153, 0, 1)",
+        "secondary": "rgba(255, 153, 0, 0.3)"
+    }
+}
